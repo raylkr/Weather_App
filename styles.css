@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 7px;
+  background-color: #848484;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.filled {
+  background-color: #ffffff;
+}
+
+.location {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  color: #ffffff;
+  position: absolute;
+  top: 60px; 
+  width: 100%;
+  text-align: center;
+}
+
+.temperature-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  top: 200px; 
+  width: 100%;
+  text-align: center;
+}
+
+.temperature {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 240px;
+  color: #ffffff;
+  line-height: 0.5;
+}
+
+.units {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; 
+  align-items: flex-start;
+}
+
+.unit {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  color: #918f8f;
+  line-height: 0.95;
+  margin-top: -20px;
+}
+
+.unit.selected {
+  color: #ffffff;
+}
+
+.high-low {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #ffffff;
+  position: absolute;
+  top: 320px; 
+  width: 100%;
+  text-align: center;
+}
+
+.prediction-bar {
+  position: absolute;
+  top: 380px; 
+  width: 45%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.future-weather {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.prediction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.weather-icon {
+  width: 35px;
+  height: auto;
+  margin-bottom: 2px;
+}
+
+.time-temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+  line-height: 0.5;
+}
+
+.temp {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: -2px;
+}
+
+.icon-text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 45%; 
+  margin-top: 50px;
+  position: absolute;
+  top: 460px;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%; 
+}
+
+.icon {
+  width: 50%;  
+  height: auto;
+  margin-bottom: 20px; 
+}
+
+.text {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
+}
+
+.shop {
+  color: #0c3561;
+  text-decoration: underline;
+}
+
+.additional-icons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 48%; 
+  margin-top: 30px; 
+  position: absolute;
+  top: 690px; 
+}
+
+.left-icons, .right-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%; 
+}
+
+.additional-icon {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.bottom-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.bottom-button {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #14223186;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.bottom-button:hover {
+  background-color: #084080;
+}
